@@ -39,7 +39,7 @@ class DailyBonusMail extends Command
      */
     public function handle()
     {
-        $rawData = File::get('/Users/scar/Code/JD_DailyBonus/result.txt');
+        $rawData = File::get('/root/code/JD_DailyBonus/result.txt');
 
         preg_match_all(
             '/(【[\x{4e00}-\x{9fa5}]{4}】:\s{2}\S+)(\s\S+)?\n/u',
